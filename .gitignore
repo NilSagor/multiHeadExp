@@ -1,0 +1,21 @@
+# Data files
+data/
+!data/README.md # optional: keep a README explaining the folder
+.venv/
+
+.editorconfig
+
+# Results
+results/
+
+# Python
+__pycache__/
+*.pyc
+
+# Temporary/Log files
+*.log
+*.md.log
+
+# You may also want to ignore model checkpoints, like:
+*.pth
+*.pt

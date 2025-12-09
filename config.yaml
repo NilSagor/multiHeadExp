@@ -1,0 +1,22 @@
+seed: 42
+# max_epochs: 5
+device: "cuda"
+# batch_size: 1024
+
+data:
+  set_size: 10
+  batch_size: 32
+
+model:
+  input_dim: 512
+  model_dim: 256
+  num_classes: 1
+  num_layers: 4
+  num_heads: 4
+  dropout: 0.1
+  input_dropout: 0.1  
+
+training:
+  lr: 5e-4
+  warmup: 100 # steps
+  max_epochs: 5
