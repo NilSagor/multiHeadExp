@@ -19,4 +19,4 @@ model:
 training:
   lr: 5e-4
   warmup: 100 # steps
-  max_epochs: 5
+  max_epochs: 50

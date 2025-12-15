@@ -44,11 +44,11 @@ class TransformerPredictor(L.LightningModule):
         return x
     
     @torch.no_grad()
-    def get_attention_maps(self, x, mask=None, add_positional_encoding=False):
+    def get_attention_maps(self, x, mask=None):
         x = self.input_net(x)
         # if add_positon_encoding:
         #     x = self.positional_encoding(x)
-        attention_maps = self.transformer.get_attention_maps(x, mask=mask, add_positional_encoding=False)
+        attention_maps = self.transformer.get_attention_maps(x, mask=None)
         return attention_maps
 
     def configure_optimizers(self):
