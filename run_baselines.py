@@ -1,9 +1,10 @@
 import torch 
 import numpy as np
-from data import prepare_data
+
 
 from run_single import load_config
 
+from data import prepare_data
 
 config_path = "config.yaml"
 config = load_config(config_path)

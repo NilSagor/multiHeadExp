@@ -351,6 +351,12 @@ Note: Not used in AnomalyPredictor -> Confirmed via add_positional_encoding=Fals
 
 ### Results (post-training)
 
+|Metric| Value | Target|Status|
+|:---|:---|:---|:---|
+|Train Accuracy|69.5|>30| ✅ Exceeded|
+|Epoch Run|50|<= 50| ✅|
+
+
 ### Risks and Fixes
 
 | Risk | Detection | Mitigation |
